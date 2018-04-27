@@ -80,7 +80,7 @@ void loop() {
       client.publish("nodemcu/photocell", (String)val);
       client.publish("nodemcu/photocell", (String)temp);
       client.publish("nodemcu/photocell", (String)pressure);
-      Serial.println("" + (String)val);
+      Serial.println("" + (String)val + (String)temp + (String)pressure);
     }
 
 }
